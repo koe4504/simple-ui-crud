@@ -4,7 +4,7 @@
 $host = "localhost";
 $dbname = "daycare_management";
 $username = "dcdb_user"; 
-$password = "pa55word2acc355"; 
+$password = ""; 
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
