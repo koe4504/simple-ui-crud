@@ -3,6 +3,7 @@ I am using a local Linux Apache MySQL PHP(LAMP) stack to implement this projet.
 Please find code for the CRUD operation inside the pages folder. For ease of reusing the same code accross multiple pages, complementary codes are stored in other folder such as 
    - config folder - to connect to the database 
    - includes folder - for the navigation bar, the header and the footer as well as others logic...
+   - assets folder - for css, images and so on ...
     
 Below is a simplistic folder structure view. 
 
