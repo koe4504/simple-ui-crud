@@ -23,20 +23,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-/* Logout code redirect to the index.php page*/
-<?php
-session_start();
-session_destroy();
-header("Location: ../index.php");
-exit();
-?>
-
-/* Simple Session Control Code */
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../auth/login.php");
-    exit();
-}
-?>
-

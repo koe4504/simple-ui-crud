@@ -2,7 +2,7 @@
 <?php
 function checkRole($role) {
     if (!isset($_SESSION['role']) || $_SESSION['role'] !== $role) {
-        header("Location: ../pages/dashboard.php?error=unauthorized");
+        header("Location: ../pages/staff_dashboard.php?error=unauthorized");
         exit();
     }
 }
