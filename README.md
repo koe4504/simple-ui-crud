@@ -11,6 +11,14 @@ Below is a simplistic folder structure view.
 
 ![image](https://github.com/user-attachments/assets/5a20cadb-e977-43d1-98b1-459e85d54930)
 
+## watch this short video demonstration
+
+---
+
+<video controls src="video/Simple UI CRUD Operation.mp4" title="CRUD Operation Demo"></video>
+
+---
+
 ## Consult the screenshot folder to view full screenshot of the CRUD operation
 
 ---
