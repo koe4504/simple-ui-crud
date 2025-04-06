@@ -10,21 +10,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email']);
     $phone = trim($_POST['phone']);
 
-    // Client-side validation fallback
+    // This is the code for the Client-side validation fallback
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "Invalid email format.";
     } elseif (!preg_match('/^[+]?[0-9]{10,15}$/', $phone)) {
         $error = "Invalid phone number format.";
     } else {
         try {
-            // Prepare insert statement
+            // This is the code to prepare insert statement
             $stmt = $conn->prepare("INSERT INTO staff (name, role, email, phone) VALUES (?, ?, ?, ?)");
             $stmt->execute([$name, $role, $email, $phone]);
 
             header("Location: staff.php");
             exit();
         } catch (PDOException $e) {
-            // Catch database trigger errors
+            // This is the code to catch database trigger errors
             $error = $e->getMessage();
         }
     }

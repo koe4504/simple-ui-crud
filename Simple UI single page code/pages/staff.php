@@ -17,7 +17,7 @@ $staff_members = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
    
-    <!-- Main Content -->
+    <!-- Main Content display the table content for reading-->
     <div class="container mt-5">
         <h2 class="mb-4">Manage Staff</h2>
         <a href="create_staff.php" class="btn btn-primary mb-3">Add Staff</a>

@@ -1,4 +1,4 @@
-/* Simple Session Control Code */
+// Simple Session Control Code 
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {

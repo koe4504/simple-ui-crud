@@ -1,4 +1,4 @@
-/* Simple Login code redirecting to the dashboard.php page */
+// Simple Login code redirecting to the dashboard.php page 
 
 <?php
 include '../config/db_connect.php';

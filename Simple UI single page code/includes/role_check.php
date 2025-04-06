@@ -1,4 +1,4 @@
-* Simple Role-Based Access Control code */
+// Simple Role-Based Access Control code 
 <?php
 function checkRole($role) {
     if (!isset($_SESSION['role']) || $_SESSION['role'] !== $role) {

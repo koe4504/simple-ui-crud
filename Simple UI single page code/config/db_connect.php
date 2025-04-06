@@ -1,4 +1,4 @@
-/* Connecting to the daycare_management database */
+// Connecting to the daycare_management database 
 
 <?php
 $host = "localhost";

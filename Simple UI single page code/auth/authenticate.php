@@ -1,4 +1,4 @@
-/* Simple authentication logic  */
+// Simple authentication logic
 
 <?php
 include '../config/db_connect.php';

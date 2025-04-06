@@ -15,21 +15,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = trim($_POST['email']);
     $phone = trim($_POST['phone']);
 
-    // Client-side validation fallback (in case JavaScript is disabled)
+    // This is the code for Client-side validation fallback in case JavaScript is disabled
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "Invalid email format.";
     } elseif (!preg_match('/^[+]?[0-9]{10,15}$/', $phone)) {
         $error = "Invalid phone number format.";
     } else {
         try {
-            // Prepare update statement
+            // This is the code to prepare update statement
             $stmt = $conn->prepare("UPDATE staff SET name = ?, role = ?, email = ?, phone = ? WHERE id = ?");
             $stmt->execute([$name, $role, $email, $phone, $id]);
 
             header("Location: staff.php");
             exit();
         } catch (PDOException $e) {
-            // Catch database trigger errors
+            // This is the code to catch database trigger errors
             $error = $e->getMessage();
         }
     }

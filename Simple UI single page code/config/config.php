@@ -1,4 +1,4 @@
-/* Config to set Site name accross all pages  */
+// Config to set Site name accross all pages 
 
 <?php
 session_start();

@@ -1,4 +1,4 @@
-/* Simple Logout code  redirecting to the index.php page */
+// Simple Logout code  redirecting to the index.php page
 
 <?php
 session_start();

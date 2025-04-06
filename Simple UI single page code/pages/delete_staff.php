@@ -1,6 +1,7 @@
 <?php
 #include '../includes/session.php';
 include '../config/db_connect.php';
+include '../includes/role_check.php';
 #checkRole('admin');
 
 $id = $_GET['id'];
