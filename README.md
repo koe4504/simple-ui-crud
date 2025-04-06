@@ -13,7 +13,7 @@ Below is a simplistic folder structure view.
 
 ---
 
-## a short video demonstration is available inside the video folder
+## For a short video demonstration check out the clip inside the video folder
 
 ---
 
